@@ -1,8 +1,8 @@
 
-Deploying Demo for ivia-af
-==========================
+Apprentissage-Automatisé
+========================
 
 This is a demo to deploy on Github.
 
 .. toctree::
-   get_started
+   chapter1
