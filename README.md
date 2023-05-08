@@ -13,3 +13,6 @@ rm -rf \_build && d2lbook build html
 
 d2lbook build pdf
 d2lbook deploy html pdf
+
+<!-- convert latex to md -->
+pandoc -s ch1.tex -o ch1.md
