@@ -1,0 +1,8 @@
+
+Apprentissage-Automatisé
+========================
+
+This is a demo to deploy on Github.
+
+.. toctree::
+   chapter1

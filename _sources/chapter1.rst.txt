@@ -1,0 +1,21 @@
+
+Introduction Générale à l’Apprentissage Automatique
+===================================================
+
+Nous parlerons de:
+
+-  Apprentissage Supervisé
+-  Apprentissage Non-Supervisé
+-  Les méthodes à noyaux (Kernel methods)
+-  Apprentissage par Renforcement
+
+Motivations et les applications pour chaque type d’apprentissage.
+
+C’est quoi Apprentissage Automatique?
+-------------------------------------
+
+Fig. `1.1 <#bandwidth>`__.
+
+.. figure:: images/Categories-of-Machine-Learning.jpg
+
+   Les types d’A.A
