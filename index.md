@@ -1,7 +1,5 @@
-# Deploying Demo for ivia-af
+# Apprentissage-Automatisé
 
-This is a demo to deploy on Github.
-
-````toc
-get_started
-````
+```toc
+chapter1
+```

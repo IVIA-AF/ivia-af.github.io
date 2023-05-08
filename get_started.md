@@ -1,3 +1,10 @@
-# Getting Started
+# Introduction Générale à l’Apprentissage Automatique
 
-Please first install my favorite package `numpy`.
+Nous parlerons de:
+
+- Apprentissage Supervisé
+- Apprentissage Non-Supervisé
+- Les méthodes à noyaux (Kernel methods)
+- Apprentissage par Renforcement
+
+Motivations et les applications pour chaque type d’apprentissage.
