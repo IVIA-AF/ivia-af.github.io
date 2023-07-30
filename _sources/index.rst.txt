@@ -4,3 +4,5 @@ Apprentissage-Automatisé
 
 .. toctree::
    chapter1
+   chapter2
+   bibliography
