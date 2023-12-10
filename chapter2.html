@@ -391,6 +391,141 @@ peux appliquer sur ses elements.</p>
 </pre></div>
 </div>
 </div>
+<div class="section" id="les-variables">
+<h5>Les variables<a class="headerlink" href="#les-variables" title="Permalink to this heading">¶</a></h5>
+<p>Maintenant que nous savons comment utiliser python en mode calculette,
+nous pouvons créer des variables et leur assigner des valeurs comme des
+nombres. Notons que l’utilisation des variables sur python est un tout
+petit peu different que ce qui ce passe dans d’autre langage de
+programmation. Contrairement a d’autre language, python utilise une
+technique de typage faible. Les variables ne sont pas declarees a
+l’avance avant l’untilisation.</p>
+<p>Il suffit d’un simple signe égal = pour assigner un nom à une variable.
+Voyons quelques exemples pour détailler la façon de faire.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Créons un objet nommé &quot;x&quot; et &quot;y&quot; et nous leur assignons la valeur 5 et .2 respectivement</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">5</span> <span class="c1"># ici la variable x est de type integer</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mf">.2</span> <span class="c1"># ici la variable y est de type flottant (notons que 0.2 peut aussi s&#39;ecrire .2 tout simplement)</span>
+</pre></div>
+</div>
+<p>Maintenant, nous pouvons appeler <em>x</em> or <em>y</em> dans un script Python qui
+les traitera comme le nombre 5 ou .2 respectivement</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># additionner des objets</span>
+<span class="n">x</span><span class="o">+</span><span class="n">y</span>
+</pre></div>
+</div>
+<div class="output highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">5.2</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ré-assignation</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Vérification</span>
+<span class="n">x</span>
+</pre></div>
+</div>
+<div class="output highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">10</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Nous utilisons x pour assigner x de nouveau</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">x</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Vérification</span>
+<span class="n">x</span>
+</pre></div>
+</div>
+<div class="output highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">20</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Incrementation par 1 (on peux aussi incrementer avec n&#39;importe quel nombre)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
+</pre></div>
+</div>
+<div class="output highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">21</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#Autre syntaxe pour incrementer une variable</span>
+<span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
+</pre></div>
+</div>
+<div class="output highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">22</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#Decrementation par 1</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">-</span><span class="mi">1</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
+</pre></div>
+</div>
+<div class="output highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">21</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#Autre syntaxe pour decrementer une variable</span>
+<span class="n">x</span> <span class="o">-=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
+</pre></div>
+</div>
+<div class="output highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">20</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#Nous pouvons aussi multiplier l&#39;ancienne valeur de x par un quelconque nombre.</span>
+<span class="n">x</span> <span class="o">*=</span><span class="mi">2</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
+</pre></div>
+</div>
+<div class="output highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">40</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#Nous pouvons aussi diviser l&#39;ancienne valeur de x par un quelconque nombre.</span>
+<span class="n">x</span> <span class="o">/=</span><span class="mi">2</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
+</pre></div>
+</div>
+<div class="output highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">20.0</span>
+</pre></div>
+</div>
+<p>NB: Toutes les operations que nous venons de voir s’applique aussi sur
+les flottants</p>
+<p><strong>Tout de meme, voici quelques règles à respecter pour créer un nom de
+variable :</strong></p>
+<ol class="arabic simple">
+<li><p>Les noms ne doivent pas commencer par un nombre.</p></li>
+<li><p>Pas d’espace dans les noms, utilisez _ à la place</p></li>
+<li><p>Interdit d’utiliser les symboles suivants : ’”,&lt;&gt;/?|()!&#64;#$%^&amp;*~-+</p></li>
+<li><p>C’est une bonne pratique (PEP8) de mettre les noms en minuscules</p></li>
+</ol>
+<p>Les noms de variables permettent de conserver et manipuler plusieurs
+valeurs de façon simple avec Python.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Utilisez toujours des noms explicites pour mieux suivre ce que fait votre code !</span>
+<span class="n">prix_vente</span> <span class="o">=</span> <span class="mi">280</span>
+
+<span class="n">prix_unitaire</span> <span class="o">=</span> <span class="mi">150</span>
+
+<span class="n">benefice</span> <span class="o">=</span> <span class="n">prix_vente</span> <span class="o">-</span> <span class="n">prix_unitaire</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Visualiser le benefice !</span>
+<span class="n">benefice</span>
+</pre></div>
+</div>
+<div class="output highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">130</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1716,6 +1851,7 @@ l’intervalle [0,1].</p>
 <li><a class="reference internal" href="#les-nombres-avec-python">Les nombres avec Python!</a></li>
 <li><a class="reference internal" href="#les-types-de-nombres">Les types de nombres</a></li>
 <li><a class="reference internal" href="#ordre-de-priorite">Ordre de priorite</a></li>
+<li><a class="reference internal" href="#les-variables">Les variables</a></li>
 </ul>
 </li>
 </ul>

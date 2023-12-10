@@ -403,6 +403,356 @@ Ordre de priorite
 
 
 
+Les variables
+'''''''''''''
+
+Maintenant que nous savons comment utiliser python en mode calculette,
+nous pouvons créer des variables et leur assigner des valeurs comme des
+nombres. Notons que l’utilisation des variables sur python est un tout
+petit peu different que ce qui ce passe dans d’autre langage de
+programmation. Contrairement a d’autre language, python utilise une
+technique de typage faible. Les variables ne sont pas declarees a
+l’avance avant l’untilisation.
+
+Il suffit d’un simple signe égal = pour assigner un nom à une variable.
+Voyons quelques exemples pour détailler la façon de faire.
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    # Créons un objet nommé "x" et "y" et nous leur assignons la valeur 5 et .2 respectivement
+    x = 5 # ici la variable x est de type integer
+    y = .2 # ici la variable y est de type flottant (notons que 0.2 peut aussi s'ecrire .2 tout simplement)
+
+Maintenant, nous pouvons appeler *x* or *y* dans un script Python qui
+les traitera comme le nombre 5 ou .2 respectivement
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    # additionner des objets
+    x+y
+
+
+
+
+.. raw:: latex
+
+   \diilbookstyleoutputcell
+
+.. parsed-literal::
+    :class: output
+
+    5.2
+
+
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    # Ré-assignation
+    x = 10
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    # Vérification
+    x
+
+
+
+
+.. raw:: latex
+
+   \diilbookstyleoutputcell
+
+.. parsed-literal::
+    :class: output
+
+    10
+
+
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    # Nous utilisons x pour assigner x de nouveau
+    x = x + x
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    # Vérification
+    x
+
+
+
+
+.. raw:: latex
+
+   \diilbookstyleoutputcell
+
+.. parsed-literal::
+    :class: output
+
+    20
+
+
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    # Incrementation par 1 (on peux aussi incrementer avec n'importe quel nombre)
+    x = x+1
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    x
+
+
+
+
+.. raw:: latex
+
+   \diilbookstyleoutputcell
+
+.. parsed-literal::
+    :class: output
+
+    21
+
+
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    #Autre syntaxe pour incrementer une variable
+    x += 1
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    x
+
+
+
+
+.. raw:: latex
+
+   \diilbookstyleoutputcell
+
+.. parsed-literal::
+    :class: output
+
+    22
+
+
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    #Decrementation par 1
+    x = x -1
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    x
+
+
+
+
+.. raw:: latex
+
+   \diilbookstyleoutputcell
+
+.. parsed-literal::
+    :class: output
+
+    21
+
+
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    #Autre syntaxe pour decrementer une variable
+    x -= 1
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    x
+
+
+
+
+.. raw:: latex
+
+   \diilbookstyleoutputcell
+
+.. parsed-literal::
+    :class: output
+
+    20
+
+
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    #Nous pouvons aussi multiplier l'ancienne valeur de x par un quelconque nombre.
+    x *=2
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    x
+
+
+
+
+.. raw:: latex
+
+   \diilbookstyleoutputcell
+
+.. parsed-literal::
+    :class: output
+
+    40
+
+
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    #Nous pouvons aussi diviser l'ancienne valeur de x par un quelconque nombre.
+    x /=2
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    x
+
+
+
+
+.. raw:: latex
+
+   \diilbookstyleoutputcell
+
+.. parsed-literal::
+    :class: output
+
+    20.0
+
+
+
+NB: Toutes les operations que nous venons de voir s’applique aussi sur
+les flottants
+
+**Tout de meme, voici quelques règles à respecter pour créer un nom de
+variable :**
+
+1. Les noms ne doivent pas commencer par un nombre.
+2. Pas d’espace dans les noms, utilisez \_ à la place
+3. Interdit d’utiliser les symboles suivants : ’",<>/?|()!@#$%^&*~-+
+4. C’est une bonne pratique (PEP8) de mettre les noms en minuscules
+
+Les noms de variables permettent de conserver et manipuler plusieurs
+valeurs de façon simple avec Python.
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    # Utilisez toujours des noms explicites pour mieux suivre ce que fait votre code !
+    prix_vente = 280
+    
+    prix_unitaire = 150
+    
+    benefice = prix_vente - prix_unitaire
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    # Visualiser le benefice !
+    benefice
+
+
+
+
+.. raw:: latex
+
+   \diilbookstyleoutputcell
+
+.. parsed-literal::
+    :class: output
+
+    130
+
+
+
 Les Bases Mathématiques pour l’Apprentissage Automatique
 --------------------------------------------------------
 
