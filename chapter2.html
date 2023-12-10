@@ -25,6 +25,7 @@
     <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/d2l.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.jpeg"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Apprentissage Supervisé" href="chapter3.html" />
@@ -178,7 +179,7 @@ les subtilités liées aux différents Systèmes d’exploitation (Windows,
 Linux, Mac…) qui peuvent rendre l’installation encore plus
 <em>“douloureuse”</em>.</p>
 <p>Dans cette partie nous allons installer pas à pas un environnement de
-développement Python en utilisant Anaconda <a class="footnote-reference brackets" href="#id2" id="id1">1</a>. A l’issue de cette
+développement Python en utilisant Anaconda[^1]. A l’issue de cette
 partie, nous aurons un environnement de développement fonctionnel avec
 les librairies (packages) nécessaires pour faire de l’apprentissage
 automatique (Machine Learning).</p>
@@ -277,6 +278,120 @@ commandes Python (code) et des cellules de texte (Markdown).</p></li>
 <p>Nous avons préparé un notebook qui nous permettra d’aller de zèro à demi
 Héros en Python. Le notebook se trouve
 <a class="reference external" href="https://colab.research.google.com/drive/1zILtNrCmPDFyQQ1Ev1H4jeHx7FuyEZ27?usp=sharing">ici</a>.</p>
+<div class="section" id="python-pour-les-debutants-notions-de-bases-du-python">
+<h4>Python pour les debutants : Notions de bases du python<a class="headerlink" href="#python-pour-les-debutants-notions-de-bases-du-python" title="Permalink to this heading">¶</a></h4>
+<div class="section" id="les-nombres-avec-python">
+<h5>Les nombres avec Python!<a class="headerlink" href="#les-nombres-avec-python" title="Permalink to this heading">¶</a></h5>
+<p>Dans cette partie, nous allons tout apprendre comment utiliser les
+nombres sur Python.</p>
+<p>Nous allons couvrir les points suivants :</p>
+<ol class="arabic simple">
+<li><p>Les types de nombres sur Python</p></li>
+<li><p>Arithmetique de base sur les nombres</p></li>
+<li><p>Différences entre Python 2 et 3</p></li>
+<li><p>Assignation d’objets dans Python</p></li>
+</ol>
+</div>
+<div class="section" id="les-types-de-nombres">
+<h5>Les types de nombres<a class="headerlink" href="#les-types-de-nombres" title="Permalink to this heading">¶</a></h5>
+<p>Python a plusieurs “types” de nombres. Nous nous occuperons
+principalement des entiers (integers) et des nombres à virgule flottante
+(float).</p>
+<p>Le type entier (integer) représente des nombres entiers, positifs ou
+negatifs. Par exemple: 7 et -1 sont des integers.</p>
+<p>Le type flottant (float) de Python est facile à identifier parce que les
+nombres sont représentés avec la partie décimal (Attention, ici les
+nombre decimaux sont representer avec un point et non la virgule comme
+habituellement en langue française), ou alors avec le signe exponentiels
+(reprensenter par <strong>e</strong>) pour représenter les puissances de 10. Par
+exemple, 2.0 et -2.1 sont des nombres de type flottant. 2e3 ( 2 fois 10
+à la puissance 3) est aussi un nombre de type flottant en Python.</p>
+<p>Voici un tableau des deux types que nous manipulerons le plus dans ce
+cours:</p>
+<span id="table-nombre"></span><table class="docutils align-default" id="id1">
+<caption><span class="caption-number">Table 1 </span><span class="caption-text">Les types de nomber en Python.</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 56%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Exemples</p></th>
+<th class="head"><p>Type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1, 4, -2, 100</p></td>
+<td><p>Integers</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.4, 0.3, -0.5, 2e2, 3e2</p></td>
+<td><p>Floating-point numbers (float)</p></td>
+</tr>
+</tbody>
+</table>
+<p>Voyons maintenant, quelques examples d’arithmétique simples que l’on
+peux appliquer sur ses elements.</p>
+<p>Arithmétique</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Addition de 1 et 3 = 4</span>
+<span class="mi">1</span><span class="o">+</span><span class="mi">3</span>
+</pre></div>
+</div>
+<div class="output highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">4</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Soustraction de 1 dans 3 = 2</span>
+<span class="mi">3</span><span class="o">-</span><span class="mi">1</span>
+</pre></div>
+</div>
+<div class="output highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Multiplication de 2 par 2 = 4</span>
+<span class="mi">2</span><span class="o">*</span><span class="mi">2</span>
+</pre></div>
+</div>
+<div class="output highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">4</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Division de 5 par 2 = 2.5 (remaquez qu&#39;on a la un flottant)</span>
+<span class="mi">5</span><span class="o">/</span><span class="mi">2</span>
+</pre></div>
+</div>
+<div class="output highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">2.5</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Puissances. 2 a la  puissances 3 = 8</span>
+<span class="mi">2</span><span class="o">**</span><span class="mi">3</span>
+</pre></div>
+</div>
+<div class="output highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">8</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#la racine carree peut se calculer  de la même manière = 2.0</span>
+<span class="mi">4</span><span class="o">**</span><span class="mf">0.5</span>
+</pre></div>
+</div>
+<div class="output highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">2.0</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ordre-de-priorite">
+<h5>Ordre de priorite<a class="headerlink" href="#ordre-de-priorite" title="Permalink to this heading">¶</a></h5>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Voyons quel ordre de priorite python fais sur les operteurs</span>
+<span class="mi">2</span> <span class="o">+</span> <span class="mi">10</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">3</span>  <span class="c1"># avec ceci nous obtenons un resultats errone = 105</span>
+</pre></div>
+</div>
+<div class="output highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">105</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Avec des parenthèse nous pouvons garder le contrôle de ces priorités</span>
+<span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="mi">10</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="output highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">156</span>
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="les-bases-mathematiques-pour-lapprentissage-automatique">
@@ -1579,11 +1694,6 @@ l’intervalle [0,1].</p>
 <span class="math notranslate nohighlight">\(\hat{\theta}_{n}=\bar{\mathbf{x}}\)</span> en résolvant l’équation
 <span class="math notranslate nohighlight">\(\nabla \log(q(\theta, x)) = 0\)</span>.</p>
 </div></blockquote>
-<dl class="footnote brackets">
-<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p><a class="reference external" href="http://docs.anaconda.com/anaconda/navigator/">http://docs.anaconda.com/anaconda/navigator/</a></p>
-</dd>
-</dl>
 </div>
 </div>
 </div>
@@ -1601,7 +1711,15 @@ l’intervalle [0,1].</p>
 <li><a class="reference internal" href="#">Pré-requis</a><ul>
 <li><a class="reference internal" href="#langage-python-et-ses-librairies">Langage Python et ses Librairies</a><ul>
 <li><a class="reference internal" href="#installation-de-python-et-anaconda">Installation de Python et Anaconda</a></li>
-<li><a class="reference internal" href="#prise-en-main-de-python">Prise en main de Python</a></li>
+<li><a class="reference internal" href="#prise-en-main-de-python">Prise en main de Python</a><ul>
+<li><a class="reference internal" href="#python-pour-les-debutants-notions-de-bases-du-python">Python pour les debutants : Notions de bases du python</a><ul>
+<li><a class="reference internal" href="#les-nombres-avec-python">Les nombres avec Python!</a></li>
+<li><a class="reference internal" href="#les-types-de-nombres">Les types de nombres</a></li>
+<li><a class="reference internal" href="#ordre-de-priorite">Ordre de priorite</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#les-bases-mathematiques-pour-lapprentissage-automatique">Les Bases Mathématiques pour l’Apprentissage Automatique</a><ul>

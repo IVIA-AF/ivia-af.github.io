@@ -41,7 +41,7 @@ Linux, Mac…) qui peuvent rendre l’installation encore plus
 *"douloureuse"*.
 
 Dans cette partie nous allons installer pas à pas un environnement de
-développement Python en utilisant Anaconda [1]_. A l’issue de cette
+développement Python en utilisant Anaconda[^1]. A l’issue de cette
 partie, nous aurons un environnement de développement fonctionnel avec
 les librairies (packages) nécessaires pour faire de l’apprentissage
 automatique (Machine Learning).
@@ -160,6 +160,248 @@ Prise en main de Python
 Nous avons préparé un notebook qui nous permettra d’aller de zèro à demi
 Héros en Python. Le notebook se trouve
 `ici <https://colab.research.google.com/drive/1zILtNrCmPDFyQQ1Ev1H4jeHx7FuyEZ27?usp=sharing>`__.
+
+Python pour les debutants : Notions de bases du python
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Les nombres avec Python!
+''''''''''''''''''''''''
+
+Dans cette partie, nous allons tout apprendre comment utiliser les
+nombres sur Python.
+
+Nous allons couvrir les points suivants :
+
+1. Les types de nombres sur Python
+2. Arithmetique de base sur les nombres
+3. Différences entre Python 2 et 3
+4. Assignation d’objets dans Python
+
+Les types de nombres
+''''''''''''''''''''
+
+Python a plusieurs “types” de nombres. Nous nous occuperons
+principalement des entiers (integers) et des nombres à virgule flottante
+(float).
+
+Le type entier (integer) représente des nombres entiers, positifs ou
+negatifs. Par exemple: 7 et -1 sont des integers.
+
+Le type flottant (float) de Python est facile à identifier parce que les
+nombres sont représentés avec la partie décimal (Attention, ici les
+nombre decimaux sont representer avec un point et non la virgule comme
+habituellement en langue française), ou alors avec le signe exponentiels
+(reprensenter par **e**) pour représenter les puissances de 10. Par
+exemple, 2.0 et -2.1 sont des nombres de type flottant. 2e3 ( 2 fois 10
+à la puissance 3) est aussi un nombre de type flottant en Python.
+
+Voici un tableau des deux types que nous manipulerons le plus dans ce
+cours:
+
+.. _table_nombre:
+
+.. table:: Les types de nomber en Python.
+
+   ======================== ==============================
+   Exemples                 Type
+   ======================== ==============================
+   1, 4, -2, 100            Integers
+   1.4, 0.3, -0.5, 2e2, 3e2 Floating-point numbers (float)
+   ======================== ==============================
+
+
+Voyons maintenant, quelques examples d’arithmétique simples que l’on
+peux appliquer sur ses elements.
+
+Arithmétique
+            
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    # Addition de 1 et 3 = 4
+    1+3
+
+
+
+
+.. raw:: latex
+
+   \diilbookstyleoutputcell
+
+.. parsed-literal::
+    :class: output
+
+    4
+
+
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    # Soustraction de 1 dans 3 = 2
+    3-1
+
+
+
+
+.. raw:: latex
+
+   \diilbookstyleoutputcell
+
+.. parsed-literal::
+    :class: output
+
+    2
+
+
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    # Multiplication de 2 par 2 = 4
+    2*2
+
+
+
+
+.. raw:: latex
+
+   \diilbookstyleoutputcell
+
+.. parsed-literal::
+    :class: output
+
+    4
+
+
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    # Division de 5 par 2 = 2.5 (remaquez qu'on a la un flottant)
+    5/2
+
+
+
+
+.. raw:: latex
+
+   \diilbookstyleoutputcell
+
+.. parsed-literal::
+    :class: output
+
+    2.5
+
+
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    # Puissances. 2 a la  puissances 3 = 8
+    2**3
+
+
+
+
+.. raw:: latex
+
+   \diilbookstyleoutputcell
+
+.. parsed-literal::
+    :class: output
+
+    8
+
+
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    #la racine carree peut se calculer  de la même manière = 2.0
+    4**0.5
+
+
+
+
+.. raw:: latex
+
+   \diilbookstyleoutputcell
+
+.. parsed-literal::
+    :class: output
+
+    2.0
+
+
+
+Ordre de priorite
+'''''''''''''''''
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    # Voyons quel ordre de priorite python fais sur les operteurs
+    2 + 10 * 10 + 3  # avec ceci nous obtenons un resultats errone = 105
+
+
+
+
+.. raw:: latex
+
+   \diilbookstyleoutputcell
+
+.. parsed-literal::
+    :class: output
+
+    105
+
+
+
+.. raw:: latex
+
+   \diilbookstyleinputcell
+
+.. code:: python
+
+    # Avec des parenthèse nous pouvons garder le contrôle de ces priorités
+    (2+10) * (10+3)
+
+
+
+
+.. raw:: latex
+
+   \diilbookstyleoutputcell
+
+.. parsed-literal::
+    :class: output
+
+    156
+
+
 
 Les Bases Mathématiques pour l’Apprentissage Automatique
 --------------------------------------------------------
@@ -1456,6 +1698,3 @@ avec la convention :math:`\log (0)=-\infty .`
   avec :math:`S_n = \sum_{i} x_i` ce qui conduit à
   :math:`\hat{\theta}_{n}=\bar{\mathbf{x}}` en résolvant l’équation
   :math:`\nabla \log(q(\theta, x)) = 0`.
-
-.. [1]
-   http://docs.anaconda.com/anaconda/navigator/
